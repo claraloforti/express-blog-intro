@@ -40,5 +40,13 @@ app.get('/bacheca', (req, res) => {
             image: "imgs/torta_paesana.jpeg",
             ingredients: ["farina", "cacao", "burro"],
         },
-    ]
+    ];
+
+    // Invio i dati al client in formato json
+    res.json(food);
+})
+
+// Metto in ascolto il server sulla porta 3000
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`)
 })
