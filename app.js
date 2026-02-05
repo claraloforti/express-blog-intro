@@ -43,7 +43,10 @@ app.get('/bacheca', (req, res) => {
     ];
 
     // Invio i dati al client in formato json
-    res.json(food);
+    res.json({
+        total: food.length,
+        posts: food
+    });
 })
 
 // Metto in ascolto il server sulla porta 3000
