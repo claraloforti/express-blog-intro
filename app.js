@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 
 // Rotta bacheca
 app.get('/bacheca', (req, res) => {
-    // Dati del json da ritornare a questa rotta
+    // Dati da restituire a /bacheca
     const food = [
         {
             id: 1,
