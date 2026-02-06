@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 // Rotta bacheca
 app.get('/bacheca', (req, res) => {
     // Dati da restituire a /bacheca
-    const food = [
+    const recipes = [
         {
             id: 1,
             name: "Ciambellone",
@@ -44,8 +44,8 @@ app.get('/bacheca', (req, res) => {
 
     // Invio i dati al client in formato json
     res.json({
-        total: food.length,
-        posts: food
+        total: recipes.length,
+        posts: recipes
     });
 })
 
